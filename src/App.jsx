@@ -92,7 +92,7 @@ function App() {
             <div>
               {/* Card */}
               <div>
-                <img src="" />
+                <img src="comida.png" className="w-40 h-40 object-cover" />
               </div>
             </div>
           </div>
