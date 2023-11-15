@@ -40,10 +40,11 @@ function App() {
             {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
           </button>
         </nav>
-        <main className="lg:pl-28 grid grid-cols-1 lg:grid-cols-8 p-4">
-          <div className="lg:col-span-6 ">
+        {/* el pb-20 es para que la ultima card no quede pegada a la barra del menu ⬇️ */}
+        <main className="lg:pl-32 grid grid-cols-1 lg:grid-cols-8 p-4 pb-20">
+          <div className="lg:col-span-6 md:p-8 ">
             {/* Header */}
-            <header >
+            <header>
               {/* Titulo y busqueda */}
               <div className="flex flex-col mdflex-row md:justify-between md:items-center gap-4 mb-6">
                 <div>
@@ -81,7 +82,7 @@ function App() {
               </nav>
             </header>
             {/* Title content */}
-            <div className="flex items-start justify-between ">
+            <div className="flex items-start justify-between mb-16  ">
               <h2 className="text-xl text-gray-300">Chose dishes</h2>
               <button className="flex items-center gap-4 text-gray-300 bg-[#1F1D2B] py-2 px-4 rounded-lg">
                 <RiArrowDownSLine />
@@ -89,14 +90,98 @@ function App() {
               </button>
             </div>
             {/* Content */}
-            <div>
+            <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
               {/* Card */}
-              <div>
-                <img src="comida.png" className="w-40 h-40 object-cover" />
+              <div className="bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+                <img
+                  src="comida.png"
+                  className="w-40 h-40 object-cover -mt-20"
+                />
+                <p className="text-xl">Speacy seasoned seafood nodless</p>
+                <span className="text-gray-400">2.29$</span>
+                <p className="text-gray-400">20 Bowls available</p>
+              </div>
+              {/* Card */}
+              <div className="bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+                <img
+                  src="comida.png"
+                  className="w-40 h-40 object-cover -mt-20"
+                />
+                <p className="text-xl">Speacy seasoned seafood nodless</p>
+                <span className="text-gray-400">2.29$</span>
+                <p className="text-gray-400">20 Bowls available</p>
+              </div>
+              {/* Card */}
+              <div className="bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+                <img
+                  src="comida.png"
+                  className="w-40 h-40 object-cover -mt-20"
+                />
+                <p className="text-xl">Speacy seasoned seafood nodless</p>
+                <span className="text-gray-400">2.29$</span>
+                <p className="text-gray-400">20 Bowls available</p>
+              </div>
+              {/* Card */}
+              <div className="bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+                <img
+                  src="comida.png"
+                  className="w-40 h-40 object-cover -mt-20"
+                />
+                <p className="text-xl">Speacy seasoned seafood nodless</p>
+                <span className="text-gray-400">2.29$</span>
+                <p className="text-gray-400">20 Bowls available</p>
+              </div>
+              {/* Card */}
+              <div className="bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+                <img
+                  src="comida.png"
+                  className="w-40 h-40 object-cover -mt-20"
+                />
+                <p className="text-xl">Speacy seasoned seafood nodless</p>
+                <span className="text-gray-400">2.29$</span>
+                <p className="text-gray-400">20 Bowls available</p>
+              </div>
+              {/* Card */}
+              <div className="bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+                <img
+                  src="comida.png"
+                  className="w-40 h-40 object-cover -mt-20"
+                />
+                <p className="text-xl">Speacy seasoned seafood nodless</p>
+                <span className="text-gray-400">2.29$</span>
+                <p className="text-gray-400">20 Bowls available</p>
               </div>
             </div>
           </div>
-          <div className="lg:col-span-2   fixed lg:static right-0">Carrito</div>
+          <div className="lg:col-span-2   fixed lg:static right-0 top-0 bg-[#1F1D2B]  w-full h-full ">
+            {/* Orders */}
+            <div className="relative pt-16 text-gray-300 p-8">
+              <RiCloseLine className="absolute left-4 top-4 p-3 box-content text-gray-300 bg-[#262837] rounded-full text-xl" />
+              <h1 className="text-xl my-4">Orders #15313</h1>
+              {/* buttons Pills */}
+              <div className="flex items-center gap-4 flex-wrap">
+                <button className="bg-[#ec7c6a] text-white py-2 px-4 rounded-xl">
+                  Dine in{" "}
+                </button>
+                <button className=" text-[#ec7c6a] py-2 px-4 rounded-xl border border-gray-500">
+                  To go{" "}
+                </button>
+                <button className=" text-[#ec7c6a] py-2 px-4 rounded-xl border  border-gray-500">
+                  Delivery{" "}
+                </button>
+              </div>
+              {/* Car */}
+              <div>
+                <div>
+                  {" "}
+                  <h5> Item</h5>
+                  <h5> Qty</h5>
+                  <h5> Price</h5>
+                </div>
+                {/* Product */}
+              </div>
+            </div>
+          </div>
         </main>
       </div>
     </>
