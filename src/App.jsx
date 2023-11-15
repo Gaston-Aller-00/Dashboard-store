@@ -6,6 +6,7 @@ import {
   RiPieChartLine,
   RiCloseLine,
   RiSearch2Line,
+  RiArrowDownSLine,
 } from "react-icons/ri";
 //componentes
 import SideBar from "./components/shared/SideBar";
@@ -39,14 +40,14 @@ function App() {
             {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
           </button>
         </nav>
-        <main className="lg:pl-28 grid grid-cols-1 lg:grid-cols-8">
+        <main className="lg:pl-28 grid grid-cols-1 lg:grid-cols-8 p-4">
           <div className="lg:col-span-6 ">
             {/* Header */}
-            <header className="p-4">
+            <header >
               {/* Titulo y busqueda */}
-              <div className="flex flex-col gap-4 mb-6">
+              <div className="flex flex-col mdflex-row md:justify-between md:items-center gap-4 mb-6">
                 <div>
-                  <h1 className="text-2xl text-gray-300 ">Jeager Resto</h1>
+                  <h1 className="text-2xl text-gray-300  ">Jeager Resto</h1>
                   <p className="text-gray-500">08 de noviembre 2022</p>
                 </div>
                 <form>
@@ -61,17 +62,14 @@ function App() {
                 </form>
               </div>
               {/* Tabs */}
-              <nav className="text-gray-300 flex items-center justify-between border-b ">
+              <nav className="text-gray-300 flex items-center justify-between md:justify-start md:gap-8 border-b  mb-6">
                 <a
                   href="#"
                   className=" relative py-2 pr-4 before:w-1/2 before:h-[2px] before:absolute before:bg-[#ec7c6a] before:left-0 before:rounded-full before:-bottom-[1px] text-[#ec7c6a] "
                 >
                   Hot dishes
                 </a>
-                <a
-                  href="#"
-                  className="   py-2 pr-4  "
-                >
+                <a href="#" className="   py-2 pr-4  ">
                   Cold dishes
                 </a>
                 <a href="#" className=" py-2 pr-4">
@@ -82,6 +80,21 @@ function App() {
                 </a>
               </nav>
             </header>
+            {/* Title content */}
+            <div className="flex items-start justify-between ">
+              <h2 className="text-xl text-gray-300">Chose dishes</h2>
+              <button className="flex items-center gap-4 text-gray-300 bg-[#1F1D2B] py-2 px-4 rounded-lg">
+                <RiArrowDownSLine />
+                Dine in
+              </button>
+            </div>
+            {/* Content */}
+            <div>
+              {/* Card */}
+              <div>
+                <img src="" />
+              </div>
+            </div>
           </div>
           <div className="lg:col-span-2   fixed lg:static right-0">Carrito</div>
         </main>
