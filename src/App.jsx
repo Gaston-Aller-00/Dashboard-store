@@ -159,7 +159,7 @@ function App() {
               <RiCloseLine className="absolute left-4 top-4 p-3 box-content text-gray-300 bg-[#262837] rounded-full text-xl" />
               <h1 className="text-xl my-4">Orders #15313</h1>
               {/* buttons Pills */}
-              <div className="flex items-center gap-4 flex-wrap">
+              <div className="flex items-center gap-4 flex-wrap mb-8">
                 <button className="bg-[#ec7c6a] text-white py-2 px-4 rounded-xl">
                   Dine in{" "}
                 </button>
@@ -172,13 +172,37 @@ function App() {
               </div>
               {/* Car */}
               <div>
-                <div>
+                <div className="grid grid-cols-6 mb-4 p-4">
                   {" "}
-                  <h5> Item</h5>
+                  <h5 className="col-span-4"> Item</h5>
                   <h5> Qty</h5>
                   <h5> Price</h5>
                 </div>
                 {/* Product */}
+                <div className="bg-[#262837] p-4 rounded-xl">
+                  <div className="grid grid-cols-6">
+                    {/* Description productt */}
+                    <div className="col-span-4 flex items-center gap-3">
+                      <img
+                        src="comida.png"
+                        className="w-10 h-10 object-cover"
+                      />
+                      <div>
+                        <h5 className="text-sm">Spaicy seasoned</h5>
+                        <p className="text-xs text-gray-500">2.29$</p>
+                      </div>
+                    </div>
+
+                    {/* Qty */}
+                    <div >
+                      <span>2</span>
+                    </div>
+                    {/* price */}
+                    <div>
+                      <span >$4.88</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
