@@ -48,8 +48,8 @@ import SideBar from "./components/shared/SideBar";
           </button>
         </nav>
         {/* el pb-20 es para que la ultima card no quede pegada a la barra del menu ⬇️ */}
-        <main className="lg:pl-32 grid grid-cols-1 lg:grid-cols-8 p-4 pb-20">
-          <div className="lg:col-span-6 md:p-8 ">
+        <main className="lg:pl-32 grid grid-cols-1 lg:grid-cols-8 pb-20">
+          <div className="lg:col-span-6 md:p-8 p-4 ">
             {/* Header */}
             <header>
               {/* Titulo y busqueda */}
@@ -162,13 +162,13 @@ import SideBar from "./components/shared/SideBar";
           </div>
           {/* condicional ternario para que empiece en false el menu  */}
           <div
-            className={`lg:col-span-2  fixed lg:static lg:min-h-screen   top-0 bg-[#1F1D2B]  w-full h-full transition-all  ${
+            className={`lg:col-span-2  fixed     top-0 bg-[#1F1D2B]  w-full lg:w-96 lg:right-0 h-full transition-all  ${
               showOrder ? "right-0" : "-right-full"
             } `}
           >
             {/* Orders componentizar*/}
             {/* X cierra la ventana con  toggleOrders y  lg:hiddenme enconde la x en pantalla grande */}
-            <div className="relative pt-16 text-gray-300 p-8 h-full ">
+            <div className="relative pt-16 lg:pt-8 text-gray-300 p-8 h-full ">
               <RiCloseLine
                 onClick={toggleOrders}
                 className="lg:hidden absolute left-4 top-4 p-3 box-content text-gray-300 bg-[#262837] rounded-full text-xl"
