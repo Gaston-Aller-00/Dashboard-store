@@ -154,7 +154,7 @@ function App() {
             </div>
           </div>
           <div className="lg:col-span-2   fixed lg:static right-0 top-0 bg-[#1F1D2B]  w-full h-full ">
-            {/* Orders */}
+            {/* Orders componentizar*/}
             <div className="relative pt-16 text-gray-300 p-8">
               <RiCloseLine className="absolute left-4 top-4 p-3 box-content text-gray-300 bg-[#262837] rounded-full text-xl" />
               <h1 className="text-xl my-4">Orders #15313</h1>
@@ -181,7 +181,7 @@ function App() {
                 {/* Product */}
                 <div className="bg-[#262837] p-4 rounded-xl">
                   <div className="grid grid-cols-6">
-                    {/* Description productt */}
+                    {/* Description productt  componentizar*/}
                     <div className="col-span-4 flex items-center gap-3">
                       <img
                         src="comida.png"
