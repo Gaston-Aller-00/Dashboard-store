@@ -80,7 +80,7 @@ const SideBar = (props) => {
               href="#"
               className="group-hover:bg-[#ec7c6a] p-4 flex  justify-center rounded-xl text-[#ec7c6a] group-hover:text-white transition-colors"
             >
-              <RiLogoutCircleLine className="text-2xl  " />
+              <RiLogoutCircleLine  className="text-2xl  " />
             </a>
           </li>
         </ul>
