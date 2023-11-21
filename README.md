@@ -2,4 +2,4 @@
 
 -Dashbore food realized with React, tailwind and vite
 -Full responsive and modern design
--Link:
+-Link: https://dashbore-store.netlify.app
